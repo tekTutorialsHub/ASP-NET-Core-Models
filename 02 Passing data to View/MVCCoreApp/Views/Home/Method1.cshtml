@@ -1,0 +1,35 @@
+﻿@using MVCCoreApp.Models;
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Method 1</title>
+</head>
+<body>
+
+    
+    @{
+
+        Customer customer = @Model;
+        
+        //Customer customer =ViewData.Model;   
+
+        <p>Id :@customer.CustomerID </p>
+        <p>Name :@customer.Name </p>
+        <p>Name :@customer.Address </p>
+    }
+
+
+    @{
+
+        <p>Id :@Model.CustomerID </p>
+        <p>Name :@Model.Name </p>
+        <p>Name :@Model.Address </p>
+    }
+
+</body>
+</html>
